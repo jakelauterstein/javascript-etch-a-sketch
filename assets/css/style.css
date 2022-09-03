@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: Nunito, sans-serif;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(215, 72, 72);
+  color: white;
+  display: inline-block;
+  
+}
+
+.sketch-container {
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: rgb(215, 72, 72);
+  width: 60%;
+  height: 80vh;
+  margin-bottom: 20px;
+  padding: 60px;
+}
+
+.sketch-zone {
+  background: rgb(207,207,206);
+  background: linear-gradient(0deg, rgba(207,207,206,1) 0%, rgba(156,157,152,1) 100%);
+  display: flex;
+  flex-wrap: wrap;  
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.grid {
+  width: 6.25%;
+  height: 20px;
+  
+}
