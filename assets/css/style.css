@@ -43,7 +43,11 @@ h1 {
 }
 
 .grid {
-  width: 6.25%;
-  height: 20px;
+  width: 1.56%;
+  height: 5px;
   
+}
+
+.hovered {
+  background-color: black;
 }
