@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .flex {
@@ -9,6 +10,42 @@
   justify-content: center;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+/* end utility styles */
+
+/* begin spec styles */
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.welcome {
+  text-align: center;
+  margin: 0px 120px 40px 120px;
+}
+
+.btn {
+  margin: 5px 100px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(215, 72, 72); 
+  border: 2px solid black;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  background-color: rgb(236, 67, 177); 
+}
+
+.font {
+  font-family: Nunito, sans-serif;
 }
 
 h1 {
@@ -19,7 +56,6 @@ h1 {
   background-color: rgb(215, 72, 72);
   color: white;
   display: inline-block;
-  
 }
 
 .sketch-container {
@@ -27,10 +63,11 @@ h1 {
   border: 2px solid black;
   border-radius: 4px;
   background-color: rgb(215, 72, 72);
-  width: 60%;
-  height: 80vh;
-  margin-bottom: 20px;
+  width: 960px;
+  height: 500px;
   padding: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .sketch-zone {
@@ -38,16 +75,19 @@ h1 {
   background: linear-gradient(0deg, rgba(207,207,206,1) 0%, rgba(156,157,152,1) 100%);
   display: flex;
   flex-wrap: wrap;  
-  padding: 20px;
+  padding: 10px;
   border-radius: 20px;
+  width: 860px;
 }
 
 .grid {
-  width: 1.56%;
-  height: 5px;
-  
+  flex: 1;
+  height: 20px;
 }
 
 .hovered {
   background-color: black;
 }
+
+
+
