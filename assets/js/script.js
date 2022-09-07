@@ -27,6 +27,8 @@ function changeSize(input) {
   } else {
     alert('Please enter a number between 2 and 100')
   }
+
+  color=black;
 }
 
 function colorSquare() {
