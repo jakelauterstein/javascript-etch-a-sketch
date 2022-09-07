@@ -6,31 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>javascript etch-a-sketch</title>
 </head>
 <body>
-    <main>
+
         <header class='flex-col'>
             <h1 class='welcome'>welcome to javascript etch-a-sketch</h1>
-            <button class="font btn">
-                <h3>Click me to change the sketch resolution!</h3></button>
+            <p>Click and hold on the sketch pad to start sketching!</p>
+            
         </header>
 
-        <section class="sketch-container">
-            <div class="sketch-zone">
-              
+
+        <section class="flex-container">
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('white')">White</button>
+                    <button onclick="changeColor('#B4B4B1')">eraser</button>
+                    <button onclick="changeColor('random')">Random</button>
+                    <button onclick="removeColor()">Reset</button>
+                </div>
+                <div>
+                    <h2>CHANGE SKETCHPAD RESOLUTION</h2>
+                    <input type="text" placeholder="resolution of board" value='16' onchange="changeSize(this.value)"/>
+                    <button class='resize'>Set resolution. hint: higher number = smaller paintbrush</button>
+                    <h2>INPUT CUSTOM COLOR</h2>
+                    <input type="text" placeholder="enter color" onchange="changeColor(this.value)"/>
+                    <button class='resize'>apply</button>
+                </div>
             </div>
-            
         </section>
-    </main>
 
-
-
-
-
-
-
-   <script src="assets/js/script.js"></script>
 </body>
+<script src="assets/js/script.js"></script>
 </html>

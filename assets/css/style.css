@@ -1,4 +1,104 @@
 * {
+  font-family: sans-serif;
+}
+
+h2{
+  font-family: sans-serif;
+}
+
+
+.board {
+  border-radius: 20px;
+  width: 500px;
+  height: 500px;
+  display: grid;
+}
+
+.welcome {
+  font-family: sans-serif;
+  font-size: large;
+  padding: 20px;
+}
+p {
+  font-family: sans-serif;
+  font-size: medium;
+  padding: 20px;
+}
+
+.content {
+  background-color: rgb(215, 72, 72);
+  padding: 60px;
+  width: 510px;
+  border-radius: 5px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+}
+h1{
+  background-color: rgb(215, 72, 72);
+  border-radius: 5px;
+  margin: 5px;
+}
+p {
+  background-color: rgb(215, 72, 72);
+  border-radius: 5px;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  padding: 5px 8px;
+  background-color: rgb(53, 224, 224);
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+input {
+  margin-top:  5px;
+}
+
+h2 {
+  font-size: larger;
+  padding-top: 5px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +116,7 @@
 
 /* begin spec styles */
 
-.flex-col {
+/* .flex-col {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +158,7 @@ h1 {
   display: inline-block;
 }
 
-.sketch-container {
+.flex-container {
   margin: 0 auto;
   border: 2px solid black;
   border-radius: 4px;
@@ -70,11 +170,9 @@ h1 {
   justify-content: center;
 }
 
-.sketch-zone {
+.content {
   background: rgb(207,207,206);
   background: linear-gradient(0deg, rgba(207,207,206,1) 0%, rgba(156,157,152,1) 100%);
-  display: flex;
-  flex-wrap: wrap;  
   padding: 10px;
   border-radius: 20px;
   width: 860px;
@@ -87,7 +185,7 @@ h1 {
 
 .hovered {
   background-color: black;
-}
+} */
 
 
 
