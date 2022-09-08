@@ -216,9 +216,13 @@ p {
   
 .board {
   
-  width: 400px;
-  height: 400px;
- 
+  width: 280px;
+  height: 280px;
+ padding-left: 10px;
+}
+
+.board div {
+  margin-left: 30px;
 }
 
 .flex-container{
@@ -228,8 +232,8 @@ p {
 }
 
 .content{
-  padding: 20px;
-  width: 400px;
+  padding: 30px;
+  width: 300px;
 }
 
 .resize {
