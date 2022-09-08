@@ -94,6 +94,15 @@ document.querySelector('body').addEventListener('mouseup', () =>{
 
 })
 
+document.querySelector('body').addEventListener('touchstart', () =>{
+  click = !click;
+
+})
+document.querySelector('body').addEventListener('touchend', () =>{
+  click = !click;
+
+})
+
 function unselect () {
   randomBtn.classList.remove('selected');
     whiteBtn.classList.remove("selected");
