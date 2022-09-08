@@ -15,6 +15,7 @@
         <header class='flex-col'>
             <h1 class='welcome'>welcome to javascript etch-a-sketch</h1>
             <p>Click and hold on the sketch pad to start sketching!</p>
+            <p>Scroll down to view color options!</p>
             
         </header>
 
@@ -22,25 +23,36 @@
         <section class="flex-container">
             <div class="content">
                 <div class="board"></div>
+            </div>
+            <div class='content flex-col-container'>
+                <div class="presets">
+                <h2>COLOR PRESETS</h2>
                 <div class="buttons">
-                    <button onclick="changeColor('black')">Black</button>
-                    <button onclick="changeColor('white')">White</button>
-                    <button onclick="changeColor('#B4B4B1')">eraser</button>
-                    <button onclick="changeColor('random')">Random</button>
+                    <button class='black-btn' onclick="changeColor('black')">Black</button>
+                    <button class='white-btn'  onclick="changeColor('white')">White</button>
+                    <button class='eraser-btn' onclick="changeColor('#B4B4B1')">eraser</button>
+                    <button class='random-btn' onclick="changeColor('random')">Random</button>
                     <button onclick="removeColor()">Reset</button>
+                
                 </div>
-                <div>
+            </div>
+                    <div class="presets">
                     <h2>CHANGE SKETCHPAD RESOLUTION</h2>
                     <input type="text" placeholder="resolution of board" value='16' onchange="changeSize(this.value)"/>
                     <button class='resize'>Set resolution. hint: higher number = smaller paintbrush</button>
+                </div>
+                <div class="presets">
                     <h2>INPUT CUSTOM COLOR</h2>
-                    <input type="text" placeholder="enter color" onchange="changeColor(this.value)"/>
-                    <button class='resize'>apply</button>
+                    <div class='colorpicker'>
+                        <button onclick="unselect()" class="swatchy-button swatchy-trigger"><span class="swatchy-button-top">Click to Select a Color <small>* see colors below *</small></span></button>
+                        <input onchange="changeColor(this.data-swatchy-color)" type="text" class="swatchy-output swatchy-display" disabled>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
 
 </body>
 <script src="assets/js/script.js"></script>
-<script src="swatchy.js"></script>
+<script>Swatchy()</script>
 </html>
